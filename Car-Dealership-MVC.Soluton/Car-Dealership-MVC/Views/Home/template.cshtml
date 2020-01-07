@@ -1,0 +1,26 @@
+  
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Template</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <h1>Template</h1>
+    <p>Fill out the following forms</p>
+    <form class="jumbotron" action="/new" method="post">
+    <!-- action="/template" matches with route from HomeController.cs -->
+
+     <label for="maxPrice">Enter max price;</label>
+     <input id="maxPrice" name="price" type="number">
+
+    <!-- label/id name "test1"  matches  parameter "string test1"-->
+
+     <label for="test2">Enter an test2 word:</label>
+     <input id="test2" name="test2" type="number">
+     <button type="submit">Get your words</button>
+    <!--  button renders route -->
+    <a href='/'>Add a new item</a>
+    </form>
+  </body>
+</html>
